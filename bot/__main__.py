@@ -22,7 +22,7 @@ from .modules import authorize, list, cancel_mirror, mirror_status, mirror, clon
 
 def stats(update, context):
     currentTime = get_readable_time(time() - botStartTime)
-    total, used, free, disk= disk_usage('/')
+    total, used, free, disk= disk_usage('/DrivePool')
     total = get_readable_file_size(total)
     used = get_readable_file_size(used)
     free = get_readable_file_size(free)
